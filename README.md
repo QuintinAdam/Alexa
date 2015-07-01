@@ -59,7 +59,48 @@ After you or your team have picked which server you want fork this project and w
 
 You need to define the intents in the IntentSchema and the phrases you want supported in the SampleUtterances file.
 
-## Setting up your own Alexa Ruby server (if you have your own Alexa)
+### Request Body Syntax
+
+```
+{
+  "version": "string",
+  "session": {
+    "new": boolean,
+    "sessionId": "string",
+    "application": {
+      "applicationId": "string"
+    },
+    "attributes": {
+      "string": object
+    },
+    "user": {
+      "userId": "string"
+    }
+  },
+  "request": object
+}
+```
+
+### Sample Intent Request
+
+```
+{
+  "type": "IntentRequest",
+  "requestId": "string",
+  "timestamp": "string",
+  "intent": {
+    "name": "string",
+    "slots": {
+      "string": {
+        "name": "string",
+        "value": "string"
+      }
+    }
+  }
+}
+```
+
+## Setting up your own Alexa Ruby server (if you have your own Echo)
 
 ### Base Setup
 
@@ -138,3 +179,7 @@ openssl x509 -req -days 365 -in csr.pem -signkey privatekey.pem -out server.crt
 aws iam upload-server-certificate --server-certificate-name APPNAME --certificate-body file://server.crt --private-key file://privatekey.pem
 cat server.crt
 ```
+
+https://console.aws.amazon.com/elasticbeanstalk
+https://developer.amazon.com/edw/home.html#/
+https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions

@@ -36,14 +36,32 @@ post '/' do
   if (request.type == 'LAUNCH_REQUEST')
     # Process your Launch Request
     # Call your methods for your application here that process your Launch Request.
-    response.add_speech('Molten Man is running!')
-    response.add_hash_card( { title: 'Molten Man Run', subtitle: 'Molten Man Running!' } )
+    response.add_reprompt('Molten Man is running and ready to insult yo face! You can insult by saying, insult cody!')
+    response.add_hash_card( { title: 'Molten Man Running', subtitle: 'Molten Man is Runninggg!' } )
   end
 
   if (request.type == 'INTENT_REQUEST')
     # Process your Intent Request
     p "#{request.slots}"
+    # "{\"PersonName\"=>{\"name\"=>\"PersonName\", \"value\"=>\"cody\"}}"
+    # request.slots
     p "#{request.name}"
+    # "MeanAlexaIntent"
+    p "xxxxxxxxxxxxxx"
+    p "#{request.add_slots(request.slots)}"
+    p "#{request.slots}"
+    if request.name == "MeanAlexaIntent"
+      persons_name = 'cody'
+      # get insult
+      response.add_speech("I received an intent named #{request.name}?")
+      response.add_hash_card( { title: 'Molten Man Intent', subtitle: "Intent #{request.name}" } )
+    elsif request.name == "NiceAlexaIntent"
+      # get motivation
+    elsif reuqest.name == "TellMeAboutIntent"
+
+    else #help intent?
+
+    end
     response.add_speech("I received an intent named #{request.name}?")
     response.add_hash_card( { title: 'Molten Man Intent', subtitle: "Intent #{request.name}" } )
   end
