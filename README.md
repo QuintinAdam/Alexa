@@ -1,6 +1,33 @@
 # DRUG Alexa
 
-Alexa ruby gem: https://github.com/damianFC/alexa-rubykit
+Look at code to find methods here - Alexa ruby gem: https://github.com/damianFC/alexa-rubykit
+
+## Sample Calls
+
+Calls always start with "Alexa {Ask|Tell|Talk to|Open|Launch|Start|Use|Resume|Run|Load|Begin} AppName {what|how|to|about|for|if|whether|or whatever else you want}"
+
+Alexa ask MeanAlexa to insult Cody
+
+or
+
+Alexa run MeanAlexa insult Cody
+
+DrugAddict:
+  -
+DrugDealer:
+  -
+DrugMule:
+  -
+DrugUser:
+  -
+GorillaMan:
+  -
+MoltenMan:
+  -
+PhantonRider:
+  -
+ShrunkenBones:
+  -
 
 ## Setting up Alexa Ruby
 
@@ -69,3 +96,13 @@ Alexa ruby gem: https://github.com/damianFC/alexa-rubykit
 ### Other Notes
 
 When deploying to eb with gems coming from git include the .ebextensions folder
+
+
+```
+openssl genrsa 2048 > privatekey.pem
+openssl req -new -key privatekey.pem -out csr.pem
+openssl x509 -req -days 365 -in csr.pem -signkey privatekey.pem -out server.crt
+
+aws iam upload-server-certificate --server-certificate-name APPNAME --certificate-body file://server.crt --private-key file://privatekey.pem
+cat server.crt
+```
