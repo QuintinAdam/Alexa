@@ -1,5 +1,7 @@
 # DRUG Alexa
 
+Alexa ruby gem: https://github.com/damianFC/alexa-rubykit
+
 ## Setting up Alexa Ruby
 
 ### Base Setup

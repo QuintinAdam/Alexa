@@ -36,8 +36,8 @@ post '/' do
   if (request.type == 'LAUNCH_REQUEST')
     # Process your Launch Request
     # Call your methods for your application here that process your Launch Request.
-    response.add_speech('Gorilla Man is running!')
-    response.add_hash_card( { title: 'Gorilla Man Run', subtitle: 'Gorilla Man Running!' } )
+    response.add_speech('Phantom Rider is running!')
+    response.add_hash_card( { title: 'Phantom Rider Run', subtitle: 'Phantom Rider Running!' } )
   end
 
   if (request.type == 'INTENT_REQUEST')
@@ -45,7 +45,7 @@ post '/' do
     p "#{request.slots}"
     p "#{request.name}"
     response.add_speech("I received an intent named #{request.name}?")
-    response.add_hash_card( { title: 'Gorilla Man Intent', subtitle: "Intent #{request.name}" } )
+    response.add_hash_card( { title: 'Phantom Rider Intent', subtitle: "Intent #{request.name}" } )
   end
 
   if (request.type =='SESSION_ENDED_REQUEST')
