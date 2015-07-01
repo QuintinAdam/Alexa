@@ -1,0 +1,35 @@
+{
+  "intents": [
+    {
+      "intent": "MeanAlexaIntent",
+      "slots": [
+        {
+          "name": "PersonName",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "NiceAlexaIntent",
+      "slots": [
+        {
+          "name": "PersonName",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "TellMeAboutIntent",
+      "slots": [
+        {
+          "name": "PersonName",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "HelpIntent",
+      "slots": []
+    }
+  ]
+}
