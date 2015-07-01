@@ -59,7 +59,7 @@ After you or your team have picked which server you want fork this project and w
 
 You need to define the intents in the IntentSchema and the phrases you want supported in the SampleUtterances file.
 
-## Setting up your own Alexa Ruby
+## Setting up your own Alexa Ruby server (if you have your own Alexa)
 
 ### Base Setup
 
@@ -86,7 +86,8 @@ You need to define the intents in the IntentSchema and the phrases you want supp
 2. `cd temp-cert`
 3. Generate key `openssl genrsa 2048 > privatekey.pem`
 4. Generate a certificate request `openssl req -new -key privatekey.pem -out csr.pem`
-  - ```
+
+  ```
     Country Name (2 letter code) [AU]:US
     State or Province Name (full name) [Some-State]:Utah
     Locality Name (eg, city) []:Salt Lake City
@@ -100,6 +101,7 @@ You need to define the intents in the IntentSchema and the phrases you want supp
     A challenge password []:
     An optional company name []:
   ```
+
 5. Generate self signed certificate `openssl x509 -req -days 365 -in csr.pem -signkey privatekey.pem -out server.crt`
 6. Upload cert to amazon `aws iam upload-server-certificate --server-certificate-name test-rubykit --certificate-body file://server.crt --private-key file://privatekey.pem`
   - install aws command line interface `pip install awscli`
