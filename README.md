@@ -1,6 +1,6 @@
 # DRUG Alexa
 
-Look at code to find methods here - Alexa ruby gem: https://github.com/damianFC/alexa-rubykit
+Look at code to find methods here - Alexa ruby gem: https://github.com/QuintinAdam/alexa-rubykit
 
 ## Sample Calls
 
@@ -104,7 +104,7 @@ You need to define the intents in the IntentSchema and the phrases you want supp
 
 ### Base Setup
 
-1. Clone sample app: `https://github.com/damianFC/alexa-rubykit`
+1. Clone sample app: `https://github.com/QuintinAdam/alexa-rubykit`
 2. Install eb (elastic beanstock command line tool)
   - Guide:
     - http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/eb-cli3-install.html

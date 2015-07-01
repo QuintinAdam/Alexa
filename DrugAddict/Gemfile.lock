@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/damianFC/alexa-rubykit.git
+  remote: https://github.com/QuintinAdam/alexa-rubykit.git
   revision: 0895a76770b42700e1d09daaab5e79f88c5aaee4
   specs:
     alexa_rubykit (1.1.0)
