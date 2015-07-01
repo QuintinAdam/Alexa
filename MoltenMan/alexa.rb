@@ -43,6 +43,7 @@ post '/' do
   if (request.type == 'INTENT_REQUEST')
     # Process your Intent Request
     p "#{request.slots}"
+    p request.slots
     # "{\"PersonName\"=>{\"name\"=>\"PersonName\", \"value\"=>\"cody\"}}"
     # request.slots
     p "#{request.name}"
