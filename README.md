@@ -65,3 +65,7 @@ Alexa ruby gem: https://github.com/damianFC/alexa-rubykit
 
 1. Commit Changes
 2. `eb deploy`
+
+### Other Notes
+
+When deploying to eb with gems coming from git include the .ebextensions folder
