@@ -52,9 +52,10 @@ post '/' do
     p "#{request.slots}"
     if request.name == "MeanAlexaIntent"
       persons_name = request.slots["PersonName"]["value"]
+      puts persons_name
       # get insult
       response.add_speech("#{persons_name}, I received an intent named #{request.name}?")
-      response.add_hash_card( { title: 'Molten Man Intent', subtitle: "Intent #{request.name}" } )
+      response.add_hash_card( { title: 'Molten Man Intent', subtitle: "#{persons_name }Intent #{request.name}" } )
     elsif request.name == "NiceAlexaIntent"
       # get motivation
     elsif reuqest.name == "TellMeAboutIntent"
