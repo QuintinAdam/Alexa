@@ -4,7 +4,7 @@ Look at code to find methods here - Alexa ruby gem: https://github.com/damianFC/
 
 ## Sample Calls
 
-Calls always start with "Alexa {Ask|Tell|Talk to|Open|Launch|Start|Use|Resume|Run|Load|Begin} AppName {what|how|to|about|for|if|whether|or whatever else you want}"
+Calls always start with "Alexa {Ask|Tell|Talk to|Open|Launch|Start|Use|Resume|Run|Load|Begin} AppName {what|how|to|about|for|if|whether|or whatever else you want}" followed by the rest of your command.
 
 Alexa ask MeanAlexa to insult Cody
 
@@ -12,24 +12,54 @@ or
 
 Alexa run MeanAlexa insult Cody
 
-DrugAddict:
-  -
-DrugDealer:
-  -
-DrugMule:
-  -
-DrugUser:
-  -
-GorillaMan:
-  -
-MoltenMan:
-  -
-PhantonRider:
-  -
-ShrunkenBones:
-  -
+#### Team DrugAddict:
 
-## Setting up Alexa Ruby
+  Example Calls:
+    -
+
+#### Team DrugDealer:
+
+  Example Calls:
+    -
+
+#### Team DrugMule:
+
+  Example Calls:
+    -
+
+#### Team DrugUser:
+
+  Example Calls:
+    -
+
+#### Team GorillaMan:
+
+  Example Calls:
+    -
+
+#### Team MoltenMan:
+
+  Example Calls:
+    -
+
+#### Team PhantonRider:
+
+  Example Calls:
+    -
+
+#### Team ShrunkenBones:
+
+  Example Calls:
+    -
+
+
+## Contributing
+
+After you or your team have picked which server you want fork this project and work on your own branch. When you want to test out the results make a pull request to the project and I will merge and deploy the code.
+
+You need to define the intents in the IntentSchema and the phrases you want supported in the SampleUtterances file.
+
+## Setting up your own Alexa Ruby
 
 ### Base Setup
 
