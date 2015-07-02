@@ -1,6 +1,6 @@
-require 'sinatra'
-require 'json'
 require 'bundler/setup'
+require 'json'
+require 'sinatra'
 require 'alexa_rubykit'
 require 'open-uri'
 
@@ -47,7 +47,7 @@ post '/' do
     p "#{request.name}"
     response.add_speech("I received an intent named #{request.name}?")
     response.add_hash_card( { title: 'Drug Dealer Intent', subtitle: "Intent #{request.name}" } )
-    case request.name 
+    case request.name
     when "ShowerThoughtIntent"
       poop = open(SHOWERTHOUGHTURL)
       body = File.read(poop)
