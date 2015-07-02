@@ -2,12 +2,13 @@ require 'sinatra'
 require 'json'
 require 'bundler/setup'
 require 'alexa_rubykit'
+require 'open-uri'
 
 # We must return application/json as our content type.
 before do
   content_type('application/json')
 end
-
+SHOWERTHOUGHTURL = "http://www.reddit.com/r/showerthoughts.json"
 #enable :sessions
 post '/' do
   # Check that it's a valid Alexa request
@@ -46,6 +47,15 @@ post '/' do
     p "#{request.name}"
     response.add_speech("I received an intent named #{request.name}?")
     response.add_hash_card( { title: 'Drug Dealer Intent', subtitle: "Intent #{request.name}" } )
+    case request.name 
+    when "ShowerThoughtIntent"
+      poop = open(SHOWERTHOUGHTURL)
+      body = File.read(poop)
+      json = JSON.parse(body)
+      post = json["data"]["children"].sample
+      shower_thought = post['data']["title"]
+      response.add_speech(shower_thought)
+    end
   end
 
   if (request.type =='SESSION_ENDED_REQUEST')
