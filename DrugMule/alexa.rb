@@ -44,8 +44,17 @@ post '/' do
     # Process your Intent Request
     p "#{request.slots}"
     p "#{request.name}"
-    response.add_speech("I received an intent named #{request.name}?")
-    response.add_hash_card( { title: 'Drug Mule Intent', subtitle: "Intent #{request.name}" } )
+    #response.add_speech("I received an intent named #{request.name}?")
+    #response.add_hash_card( { title: 'Drug Mule Intent', subtitle: "Intent #{request.name}" } )
+    if request.name == "Inventory"
+      response.add_speech("I'm just visiting Aruba for the day. I don't have any luggage, officer.")
+    elsif request.name == "PackSomething"
+      response.add_speech("I am stashing " + request.slots["DrugName"]["value"] + " in my umm nevermind")
+    elsif request.name == "BlowUp"
+      response.add_speech("Self destruct in ten seconds")
+    elsif request.name == "Help"
+      response.add_speech("Ask to describe your luggage, to pack something, or to initiate self destruct")
+    end
   end
 
   if (request.type =='SESSION_ENDED_REQUEST')
