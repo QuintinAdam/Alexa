@@ -1,7 +1,15 @@
 {
   "intents": [
     {
-      "intent": "DrugMuleIntent",
+      "intent": "Inventory",
+      "slots": []
+    },
+    {
+      "intent": "BlowUp",
+      "slots": []
+    },
+    {
+      "intent": "PackSomething",
       "slots": [
         {
           "name": "DrugName",
