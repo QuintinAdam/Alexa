@@ -2,6 +2,7 @@ require 'sinatra'
 require 'json'
 require 'bundler/setup'
 require 'alexa_rubykit'
+require 'philsosophy'
 
 # We must return application/json as our content type.
 before do
@@ -36,16 +37,25 @@ post '/' do
   if (request.type == 'LAUNCH_REQUEST')
     # Process your Launch Request
     # Call your methods for your application here that process your Launch Request.
-    response.add_speech('Gorilla Man is running!')
-    response.add_hash_card( { title: 'Gorilla Man Run', subtitle: 'Gorilla Man Running!' } )
+    response.add_speech('Drug Mule is running!')
+    response.add_hash_card( { title: 'Drug Mule Run', subtitle: 'Drug Mule Running!' } )
   end
 
   if (request.type == 'INTENT_REQUEST')
     # Process your Intent Request
-    p "#{request.slots}"
-    p "#{request.name}"
-    response.add_speech("I received an intent named #{request.name}?")
-    response.add_hash_card( { title: 'Gorilla Man Intent', subtitle: "Intent #{request.name}" } )
+    # p "#{request.slots}"
+    # p "#{request.name}"
+    # response.add_speech("I received an intent named #{request.name}?")
+    # response.add_hash_card( { title: 'Drug Mule Intent', subtitle: "Intent #{request.name}" } )
+    if request.name == "PhilsosophyIntent"
+      response.add_speach("#{Philsosophy.new().get_quote.sample}")
+
+      # persons_name = request.slots["PersonName"]["value"]
+      # puts persons_name
+      # get insult
+      # response.add_speech("#{persons_name}, I received an intent named #{request.name}?")
+      # response.add_hash_card( { title: 'Molten Man Intent', subtitle: "#{persons_name }Intent #{request.name}" } )
+    end
   end
 
   if (request.type =='SESSION_ENDED_REQUEST')
