@@ -2,6 +2,7 @@ require 'sinatra'
 require 'json'
 require 'bundler/setup'
 require 'alexa_rubykit'
+require 'messenger'
 
 # We must return application/json as our content type.
 before do
@@ -44,8 +45,22 @@ post '/' do
     # Process your Intent Request
     p "#{request.slots}"
     p "#{request.name}"
-    response.add_speech("I received an intent named #{request.name}?")
-    response.add_hash_card( { title: 'Drug Addict Intent', subtitle: "Intent #{request.name}" } )
+
+    case request.name
+    when "SendMessageIntent"
+      persons_name = request.slots["PersonName"]["value"]
+      message = request.slots["Message"]["value"]
+
+      people = {'ben' => '+18019461510', 'lily' => '+18018100225', 'lilly' => '+18018100225' }
+
+      phone_number = people[persons_name]
+
+      Messenger.new().message(message, phone_number)
+      # get insult
+      response.add_speech("I sent #{persons_name}, the message: #{message}")
+      response.add_hash_card( { title: "Sent a text message to #{persons_name} !", subtitle: "I sent #{persons_name}, the message: #{message}" } )
+    end
+
   end
 
   if (request.type =='SESSION_ENDED_REQUEST')

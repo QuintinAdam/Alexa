@@ -1,10 +1,11 @@
-MeanAlexaIntent to insult {cody|PersonName}
-MeanAlexaIntent insult {cody|PersonName}
-NiceAlexaIntent to motivate {cody|PersonName}
-NiceAlexaIntent motivate {cody|PersonName}
-TellMeAboutIntent about {cody|PersonName}
-TellMeAboutIntent tell me about {cody|PersonName}
-TellMeAboutIntent to tell me about {cody|PersonName}
+# Alexa, ask/tell MY_APP ...... (Intent) my custom thing {sample_text|slot_variable}
+
+SendMessageIntent to text {lily|PersonName} this {my_message|Message}
+SendMessageIntent text {lily|PersonName}  this {my_message|Message}
+SendMessageIntent message {lily|PersonName} this {my_message|Message}
+SendMessageIntent to message {lily|PersonName} this {my_message|Message}
+
+
 
 HelpIntent for help
 HelpIntent to help

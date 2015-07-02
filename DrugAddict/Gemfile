@@ -1,3 +1,6 @@
 source 'http://rubygems.org'
 gem 'sinatra'
 gem "alexa_rubykit", git: 'https://github.com/QuintinAdam/alexa-rubykit.git'
+
+gem 'pry'
+gem 'twilio-ruby'
