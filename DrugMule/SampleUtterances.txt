@@ -1,10 +1,6 @@
-MeanAlexaIntent to insult {cody|PersonName}
-MeanAlexaIntent insult {cody|PersonName}
-NiceAlexaIntent to motivate {cody|PersonName}
-NiceAlexaIntent motivate {cody|PersonName}
-TellMeAboutIntent about {cody|PersonName}
-TellMeAboutIntent tell me about {cody|PersonName}
-TellMeAboutIntent to tell me about {cody|PersonName}
+Inventory to describe your luggage
+PackSomething to pack {drugs|DrugName}
+BlowUp to initiate self destruct
 
 HelpIntent for help
 HelpIntent to help

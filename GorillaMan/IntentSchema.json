@@ -28,6 +28,15 @@
       ]
     },
     {
+      "intent": "PhilsosophyIntent",
+      "slots": [
+        {
+          "name": "PersonName",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
       "intent": "HelpIntent",
       "slots": []
     }

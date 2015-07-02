@@ -1,28 +1,10 @@
 {
   "intents": [
     {
-      "intent": "MeanAlexaIntent",
+      "intent": "DrugMuleIntent",
       "slots": [
         {
-          "name": "PersonName",
-          "type": "LITERAL"
-        }
-      ]
-    },
-    {
-      "intent": "NiceAlexaIntent",
-      "slots": [
-        {
-          "name": "PersonName",
-          "type": "LITERAL"
-        }
-      ]
-    },
-    {
-      "intent": "TellMeAboutIntent",
-      "slots": [
-        {
-          "name": "PersonName",
+          "name": "DrugName",
           "type": "LITERAL"
         }
       ]
