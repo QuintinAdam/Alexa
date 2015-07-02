@@ -30,6 +30,11 @@
     {
       "intent": "HelpIntent",
       "slots": []
+    },
+    {
+      "intent": "ShowerThoughtIntent",
+      "slots": []
     }
   ]
+
 }
