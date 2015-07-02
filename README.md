@@ -1,5 +1,7 @@
 # DRUG Alexa
 
+Project for the downtown ruby user group meetup
+
 Look at code to find methods here - Alexa ruby gem: https://github.com/QuintinAdam/alexa-rubykit
 
 ## Sample Calls
