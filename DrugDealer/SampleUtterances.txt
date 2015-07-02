@@ -1,3 +1,8 @@
+ShowerThoughtAlexa to tell me a shower thought
+ShowerThoughtAlexa tell me a shower thought
+ShowerThoughtAlexa give me a shower thought
+ShowerThoughtAlexa whats on your mind
+
 MeanAlexaIntent to insult {cody|PersonName}
 MeanAlexaIntent insult {cody|PersonName}
 NiceAlexaIntent to motivate {cody|PersonName}
