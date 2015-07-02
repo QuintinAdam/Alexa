@@ -6,6 +6,8 @@ TellMeAboutIntent about {cody|PersonName}
 TellMeAboutIntent tell me about {cody|PersonName}
 TellMeAboutIntent to tell me about {cody|PersonName}
 
+PhilsosophyIntent to prophesize
+
 HelpIntent for help
 HelpIntent to help
 HelpIntent help
