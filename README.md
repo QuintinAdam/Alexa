@@ -48,23 +48,30 @@ Alexa run MeanAlexa insult Cody
 
 Example Calls:
 
-- insult and motivate
+#### insult and motivate
+
 - Alexa ask Phantom Rider to insult {Quintin|PersonName}
 - Alexa ask Phantom Rider insult {Quintin|PersonName}
 - Alexa ask Phantom Rider to motivate {Quintin|PersonName}
 - Alexa ask Phantom Rider motivate {Quintin|PersonName}
-- prophesize
+
+#### prophesize
+
 - Alexa ask Phantom Rider to prophesize
 - Alexa ask Phantom Rider prophesize
 - Alexa ask Phantom Rider be wise
 - Alexa ask Phantom Rider to be wise
-- shower thoughts
+
+#### shower thoughts
+
 - Alexa ask Phantom Rider to tell me a shower thought
 - Alexa ask Phantom Rider tell me a shower thought
 - Alexa ask Phantom Rider give me a shower thought
 - Alexa ask Phantom Rider whats on your mind
 - Alexa ask Phantom Rider to tell me whats on your mind
-- text message
+
+#### text message
+
 - Alexa ask Phantom Rider to text this message {message|Message}
 - Alexa ask Phantom Rider text this message {message|Message}
 - Alexa ask Phantom Rider text this {message|Message}
@@ -76,7 +83,9 @@ Example Calls:
 - Alexa ask Phantom Rider to message this {message|Message}
 - Alexa ask Phantom Rider message me {message|Message}
 - Alexa ask Phantom Rider to message me {message|Message}
-- help
+
+#### help
+
 - Alexa ask Phantom Rider for help
 - Alexa ask Phantom Rider to help
 - Alexa ask Phantom Rider help
