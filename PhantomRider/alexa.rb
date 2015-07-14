@@ -42,7 +42,7 @@ post '/' do
       response.add_hash_card( { title: persons_name, subtitle: motivation } )
     when "MessageMeIntent"
       message = request.slots["Message"]["value"]
-      number = '+140474431720'
+      number = '+14074431720'
       Messenger.new.message(message, number)
       response.add_speech("I sent you, the message: #{message}")
       response.add_hash_card( { title: "Sent you a text message!", subtitle: "I sent you, the message: #{message}" } )

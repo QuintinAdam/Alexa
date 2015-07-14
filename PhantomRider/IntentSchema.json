@@ -32,6 +32,28 @@
       "slots": []
     },
     {
+      "intent": "SendMessageIntent",
+      "slots": [
+        {
+          "name": "PersonName",
+          "type": "LITERAL"
+        },
+        {
+          "name": "Message",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
+      "intent": "MessageMeIntent",
+      "slots": [
+        {
+          "name": "Message",
+          "type": "LITERAL"
+        }
+      ]
+    },
+    {
       "intent": "HelpIntent",
       "slots": []
     }
