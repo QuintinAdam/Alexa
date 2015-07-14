@@ -46,44 +46,44 @@ Alexa run MeanAlexa insult Cody
 
 #### Team PhantonRider:
 
-  Example Calls:
+Example Calls:
 
-    - insult and motivate
-    - Alexa ask Phantom Rider to insult {Quintin|PersonName}
-    - Alexa ask Phantom Rider insult {Quintin|PersonName}
-    - Alexa ask Phantom Rider to motivate {Quintin|PersonName}
-    - Alexa ask Phantom Rider motivate {Quintin|PersonName}
-    - prophesize
-    - Alexa ask Phantom Rider to prophesize
-    - Alexa ask Phantom Rider prophesize
-    - Alexa ask Phantom Rider be wise
-    - Alexa ask Phantom Rider to be wise
-    - shower thoughts
-    - Alexa ask Phantom Rider to tell me a shower thought
-    - Alexa ask Phantom Rider tell me a shower thought
-    - Alexa ask Phantom Rider give me a shower thought
-    - Alexa ask Phantom Rider whats on your mind
-    - Alexa ask Phantom Rider to tell me whats on your mind
-    - text message
-    - Alexa ask Phantom Rider to text this message {message|Message}
-    - Alexa ask Phantom Rider text this message {message|Message}
-    - Alexa ask Phantom Rider text this {message|Message}
-    - Alexa ask Phantom Rider text me {message|Message}
-    - Alexa ask Phantom Rider to text me {message|Message}
-    - Alexa ask Phantom Rider to text me the message {message|Message}
-    - Alexa ask Phantom Rider text me the message {message|Message}
-    - Alexa ask Phantom Rider message this {message|Message}
-    - Alexa ask Phantom Rider to message this {message|Message}
-    - Alexa ask Phantom Rider message me {message|Message}
-    - Alexa ask Phantom Rider to message me {message|Message}
-    - help
-    - Alexa ask Phantom Rider for help
-    - Alexa ask Phantom Rider to help
-    - Alexa ask Phantom Rider help
-    - Alexa ask Phantom Rider for help me
-    - Alexa ask Phantom Rider to help me
-    - Alexa ask Phantom Rider help me
-    - Alexa ask Phantom Rider wat
+- insult and motivate
+- Alexa ask Phantom Rider to insult {Quintin|PersonName}
+- Alexa ask Phantom Rider insult {Quintin|PersonName}
+- Alexa ask Phantom Rider to motivate {Quintin|PersonName}
+- Alexa ask Phantom Rider motivate {Quintin|PersonName}
+- prophesize
+- Alexa ask Phantom Rider to prophesize
+- Alexa ask Phantom Rider prophesize
+- Alexa ask Phantom Rider be wise
+- Alexa ask Phantom Rider to be wise
+- shower thoughts
+- Alexa ask Phantom Rider to tell me a shower thought
+- Alexa ask Phantom Rider tell me a shower thought
+- Alexa ask Phantom Rider give me a shower thought
+- Alexa ask Phantom Rider whats on your mind
+- Alexa ask Phantom Rider to tell me whats on your mind
+- text message
+- Alexa ask Phantom Rider to text this message {message|Message}
+- Alexa ask Phantom Rider text this message {message|Message}
+- Alexa ask Phantom Rider text this {message|Message}
+- Alexa ask Phantom Rider text me {message|Message}
+- Alexa ask Phantom Rider to text me {message|Message}
+- Alexa ask Phantom Rider to text me the message {message|Message}
+- Alexa ask Phantom Rider text me the message {message|Message}
+- Alexa ask Phantom Rider message this {message|Message}
+- Alexa ask Phantom Rider to message this {message|Message}
+- Alexa ask Phantom Rider message me {message|Message}
+- Alexa ask Phantom Rider to message me {message|Message}
+- help
+- Alexa ask Phantom Rider for help
+- Alexa ask Phantom Rider to help
+- Alexa ask Phantom Rider help
+- Alexa ask Phantom Rider for help me
+- Alexa ask Phantom Rider to help me
+- Alexa ask Phantom Rider help me
+- Alexa ask Phantom Rider wat
 
 #### Team ShrunkenBones:
 
