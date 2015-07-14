@@ -2,12 +2,12 @@ require 'sinatra'
 require 'json'
 require 'bundler/setup'
 require 'alexa_rubykit'
-require './philosophy'
-require './insult'
 require 'httparty'
 require 'ffaker'
-require 'open-uri'
-SHOWERTHOUGHTURL = "http://www.reddit.com/r/showerthoughts.json"
+require './philosophy'
+require './insult'
+require './hower'
+
 before do
   content_type('application/json')
 end
@@ -40,11 +40,7 @@ post '/' do
     when "PhilsosophyIntent"
       response.add_speech("#{Philosophy.get_quote.sample}")
     when "ShowerThoughtIntent"
-      poop = open(SHOWERTHOUGHTURL)
-      body = File.read(poop)
-      json = JSON.parse(body)
-      post = json["data"]["children"].sample
-      shower_thought = post['data']["title"]
+      shower_thought = ShowerThought.get_thought
       response.add_speech(shower_thought)
     else
       response.add_speech("I do not want to help you!")
