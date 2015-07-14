@@ -3,9 +3,8 @@ require 'json'
 require 'bundler/setup'
 require 'alexa_rubykit'
 require './philosophy'
-require 'insult'
+require './insult'
 require 'httparty'
-# require 'hashie'
 require 'ffaker'
 
 # We must return application/json as our content type.
