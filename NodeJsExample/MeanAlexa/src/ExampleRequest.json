@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "session": {
+    "new": false,
+    "application": {
+      "applicationId": "changeme"
+    },
+    "sessionId": "session1234",
+    "attributes": {},
+    "user": {
+      "userId": null
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "request5678",
+    "intent": {
+      "name": "MeanAlexaIntent",
+      "slots": {
+        "PersonName": {
+          "name": "PersonName",
+          "value": "cody"
+        }
+      }
+    }
+  }
+}
+
+
+
+{
+  "version": "1.0",
+  "session": {
+    "new": false,
+    "application": {
+      "applicationId": "changeme"
+    },
+    "sessionId": "session1234",
+    "attributes": {},
+    "user": {
+      "userId": null
+    }
+  },
+  "request": {
+    "type": "IntentRequest",
+    "requestId": "request5678",
+    "intent": {
+      "name": "NiceAlexaIntent",
+      "slots": {
+        "PersonName": {
+          "name": "PersonName",
+          "value": "cody"
+        }
+      }
+    }
+  }
+}
