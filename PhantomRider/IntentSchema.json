@@ -19,7 +19,7 @@
       ]
     },
     {
-      "intent": "TellMeAboutIntent",
+      "intent": "PhilsosophyIntent",
       "slots": [
         {
           "name": "PersonName",

@@ -1,10 +1,9 @@
-MeanAlexaIntent to insult {cody|PersonName}
-MeanAlexaIntent insult {cody|PersonName}
-NiceAlexaIntent to motivate {cody|PersonName}
-NiceAlexaIntent motivate {cody|PersonName}
-TellMeAboutIntent about {cody|PersonName}
-TellMeAboutIntent tell me about {cody|PersonName}
-TellMeAboutIntent to tell me about {cody|PersonName}
+MeanAlexaIntent to insult {quintin|PersonName}
+MeanAlexaIntent insult {quintin|PersonName}
+NiceAlexaIntent to motivate {quintin|PersonName}
+NiceAlexaIntent motivate {quintin|PersonName}
+
+PhilsosophyIntent to prophesize
 
 HelpIntent for help
 HelpIntent to help

@@ -2,6 +2,11 @@ require 'sinatra'
 require 'json'
 require 'bundler/setup'
 require 'alexa_rubykit'
+require 'philsosophy'
+require 'insult'
+require 'httparty'
+# require 'hashie'
+require 'ffaker'
 
 # We must return application/json as our content type.
 before do
@@ -41,11 +46,21 @@ post '/' do
   end
 
   if (request.type == 'INTENT_REQUEST')
-    # Process your Intent Request
-    p "#{request.slots}"
-    p "#{request.name}"
-    response.add_speech("I received an intent named #{request.name}?")
-    response.add_hash_card( { title: 'Phantom Rider Intent', subtitle: "Intent #{request.name}" } )
+    if request.name == "MeanAlexaIntent"
+      persons_name = request.slots["PersonName"]["value"]
+      message = HTTParty.get("http://pleaseinsult.me/api?severity=random")
+      response.add_speech("#{persons_name}, #{message['insult']}")
+      response.add_hash_card( { title: persons_name, subtitle: message['insult'] } )
+    elsif request.name == "NiceAlexaIntent"
+      persons_name = request.slots["PersonName"]["value"]
+      message = HTTParty.get("http://pleasemotivate.me/api")
+      response.add_speech("#{persons_name}, #{message['motivation']}")
+      response.add_hash_card( { title: persons_name, subtitle: message['motivation'] } )
+    elsif request.name == "PhilsosophyIntent"
+      response.add_speach("#{Philsosophy.new.get_quote.sample}")
+    else #help intent?
+      response.add_speach("I do not want to help you!")
+    end
   end
 
   if (request.type =='SESSION_ENDED_REQUEST')

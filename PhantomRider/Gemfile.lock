@@ -1,14 +1,16 @@
-GIT
-  remote: https://github.com/QuintinAdam/alexa-rubykit.git
-  revision: 0895a76770b42700e1d09daaab5e79f88c5aaee4
+GEM
+  remote: http://rubygems.org/
   specs:
     alexa_rubykit (1.1.0)
       bundler (~> 1.7)
       rake (~> 10.0)
-
-GEM
-  remote: http://rubygems.org/
-  specs:
+    ffaker (2.1.0)
+    hashie (3.4.2)
+    httparty (0.13.5)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    json (1.8.3)
+    multi_xml (0.5.5)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
@@ -23,5 +25,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  alexa_rubykit!
+  alexa_rubykit
+  ffaker
+  hashie
+  httparty
   sinatra
