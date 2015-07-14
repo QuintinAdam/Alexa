@@ -47,6 +47,7 @@ Alexa run MeanAlexa insult Cody
 #### Team PhantonRider:
 
   Example Calls:
+
     - insult and motivate
     - Alexa ask Phantom Rider to insult {Quintin|PersonName}
     - Alexa ask Phantom Rider insult {Quintin|PersonName}
