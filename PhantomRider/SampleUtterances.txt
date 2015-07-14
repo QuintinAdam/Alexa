@@ -9,6 +9,9 @@ NiceAlexaIntent to motivate {Quintin Adam|PersonName}
 NiceAlexaIntent motivate {Quintin Adam|PersonName}
 
 PhilsosophyIntent to prophesize
+PhilsosophyIntent prophesize
+PhilsosophyIntent be wise
+PhilsosophyIntent to be wise
 
 ShowerThoughtIntent to tell me a shower thought
 ShowerThoughtIntent tell me a shower thought
