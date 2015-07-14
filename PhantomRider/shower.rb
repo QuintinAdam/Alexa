@@ -1,4 +1,3 @@
-require 'open-uri'
 class ShowerThought
   SHOWERTHOUGHTURL = "http://www.reddit.com/r/showerthoughts.json"
   def self.get_thought
@@ -8,5 +7,4 @@ class ShowerThought
     post = json["data"]["children"].sample
     post['data']["title"]
   end
-
 end

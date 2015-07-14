@@ -3,10 +3,13 @@ require 'json'
 require 'bundler/setup'
 require 'alexa_rubykit'
 require 'httparty'
+require 'open-uri'
 require 'ffaker'
+require 'twilio-ruby'
 require './philosophy'
 require './insult'
-require './hower'
+require './shower'
+require './messenger'
 
 before do
   content_type('application/json')
@@ -37,6 +40,12 @@ post '/' do
       motivation = Insult.motivation
       response.add_speech("#{persons_name}, #{motivation}")
       response.add_hash_card( { title: persons_name, subtitle: motivation } )
+    when "MessageMeIntent"
+      message = request.slots["Message"]["value"]
+      number = '+140474431720'
+      Messenger.new.message(message, number)
+      response.add_speech("I sent you, the message: #{message}")
+      response.add_hash_card( { title: "Sent you a text message!", subtitle: "I sent you, the message: #{message}" } )
     when "PhilsosophyIntent"
       response.add_speech("#{Philosophy.get_quote.sample}")
     when "ShowerThoughtIntent"

@@ -1,8 +1,13 @@
 # Alexa ask Phantom Rider
-MeanAlexaIntent to insult {quintin|PersonName}
-MeanAlexaIntent insult {quintin|PersonName}
-NiceAlexaIntent to motivate {quintin|PersonName}
-NiceAlexaIntent motivate {quintin|PersonName}
+MeanAlexaIntent to insult {Quintin|PersonName}
+MeanAlexaIntent insult {Quintin|PersonName}
+NiceAlexaIntent to motivate {Quintin|PersonName}
+NiceAlexaIntent motivate {Quintin|PersonName}
+
+MeanAlexaIntent to insult {Quintin Adam|PersonName}
+MeanAlexaIntent insult {Quintin Adam|PersonName}
+NiceAlexaIntent to motivate {Quintin Adam|PersonName}
+NiceAlexaIntent motivate {Quintin Adam|PersonName}
 
 PhilsosophyIntent to prophesize
 
@@ -10,6 +15,7 @@ ShowerThoughtAlexa to tell me a shower thought
 ShowerThoughtAlexa tell me a shower thought
 ShowerThoughtAlexa give me a shower thought
 ShowerThoughtAlexa whats on your mind
+ShowerThoughtAlexa to tell me whats on your mind
 
 HelpIntent for help
 HelpIntent to help
@@ -18,3 +24,80 @@ HelpIntent for help me
 HelpIntent to help me
 HelpIntent help me
 HelpIntent wat
+
+SendMessageIntent to text {lily|PersonName} this {my_message|Message}
+SendMessageIntent text {lily|PersonName} this {my_message|Message}
+SendMessageIntent message {lily|PersonName} this {my_message|Message}
+SendMessageIntent to message {lily|PersonName} this {my_message|Message}
+
+MessageMeIntent to text this message {message|Message}
+MessageMeIntent text this message {message|Message}
+MessageMeIntent text this {message|Message}
+MessageMeIntent text me {message|Message}
+MessageMeIntent message this {message|Message}
+MessageMeIntent to message this {message|Message}
+MessageMeIntent message me {message|Message}
+MessageMeIntent to message me {message|Message}
+
+MessageMeIntent to text this message {message one|Message}
+MessageMeIntent text this message {message one|Message}
+MessageMeIntent text this {message one|Message}
+MessageMeIntent text me {message one|Message}
+MessageMeIntent message this {message one|Message}
+MessageMeIntent to message this {message one|Message}
+MessageMeIntent message me {message one|Message}
+MessageMeIntent tomessage me {message one|Message}
+
+MessageMeIntent to text this message {message one two|Message}
+MessageMeIntent text this message {message one two|Message}
+MessageMeIntent text this {message one two|Message}
+MessageMeIntent text me {message one two|Message}
+MessageMeIntent message this {message one two|Message}
+MessageMeIntent to message this {message one two|Message}
+MessageMeIntent message me {message one two|Message}
+MessageMeIntent to message me {message one two|Message}
+
+MessageMeIntent to text this message {message one two three|Message}
+MessageMeIntent text this message {message one two three|Message}
+MessageMeIntent text this {message one two three|Message}
+MessageMeIntent text me {message one two three|Message}
+MessageMeIntent message this {message one two three|Message}
+MessageMeIntent to message this {message one two three|Message}
+MessageMeIntent message me {message one two three|Message}
+MessageMeIntent to message me {message one two three|Message}
+
+MessageMeIntent to text this message {message one two three four|Message}
+MessageMeIntent text this message {message one two three four|Message}
+MessageMeIntent text this {message one two three four|Message}
+MessageMeIntent text me {message one two three four|Message}
+MessageMeIntent message this {message one two three four|Message}
+MessageMeIntent to message this {message one two three four|Message}
+MessageMeIntent message me {message one two three four|Message}
+MessageMeIntent to message me {message one two three four|Message}
+
+MessageMeIntent to text this message {message one two three four five|Message}
+MessageMeIntent text this message {message one two three four five|Message}
+MessageMeIntent text this {message one two three four five|Message}
+MessageMeIntent text me {message one two three four five|Message}
+MessageMeIntent message this {message one two three four five|Message}
+MessageMeIntent to message this {message one two three four five|Message}
+MessageMeIntent message me {message one two three four five|Message}
+MessageMeIntent to message me {message one two three four five|Message}
+
+MessageMeIntent to text this message {message one two three four five six|Message}
+MessageMeIntent text this message {message one two three four five six|Message}
+MessageMeIntent text this {message one two three four five six|Message}
+MessageMeIntent text me {message one two three four five six|Message}
+MessageMeIntent message this {message one two three four five six|Message}
+MessageMeIntent to message this {message one two three four five six|Message}
+MessageMeIntent message me {message one two three four five six|Message}
+MessageMeIntent to message me {message one two three four five six|Message}
+
+MessageMeIntent to text this message {message one two three four five six seven|Message}
+MessageMeIntent text this message {message one two three four five six seven|Message}
+MessageMeIntent text this {message one two three four five six seven|Message}
+MessageMeIntent text me {message one two three four five six seven|Message}
+MessageMeIntent message this {message one two three four five six seven|Message}
+MessageMeIntent to message this {message one two three four five six seven|Message}
+MessageMeIntent message me {message one two three four five six seven|Message}
+MessageMeIntent to message me {message one two three four five six seven|Message}
