@@ -2,7 +2,7 @@ require 'sinatra'
 require 'json'
 require 'bundler/setup'
 require 'alexa_rubykit'
-require 'philosophy'
+require './philosophy'
 require 'insult'
 require 'httparty'
 # require 'hashie'
@@ -57,7 +57,7 @@ post '/' do
       response.add_speech("#{persons_name}, #{message['motivation']}")
       response.add_hash_card( { title: persons_name, subtitle: message['motivation'] } )
     elsif request.name == "PhilsosophyIntent"
-      response.add_speach("#{Philsosophy.new.get_quote.sample}")
+      response.add_speach("#{Philosophy.new.get_quote.sample}")
     else #help intent?
       response.add_speach("I do not want to help you!")
     end
