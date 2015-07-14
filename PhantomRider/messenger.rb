@@ -8,7 +8,7 @@ class Messenger
     @client = Twilio::REST::Client.new account_sid, auth_token
   end
 
-  def message(body, to = '+15072014291', from = '+15072014291')
+  def message(body, to = '+14074431720', from = '+15072014291')
     @client.account.messages.create(
       from: from,
       to: to,
@@ -16,7 +16,7 @@ class Messenger
     )
   end
 
-  def picture_message(body, media_url = nil,  to = '+15072014291', from = '+15072014291')
+  def picture_message(body, media_url = nil,  to = '+14074431720', from = '+15072014291')
     @client.account.messages.create(
       from: from,
       to: to,
