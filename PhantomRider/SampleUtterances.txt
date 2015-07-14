@@ -54,7 +54,7 @@ MessageMeIntent text me the message {message one|Message}
 MessageMeIntent message this {message one|Message}
 MessageMeIntent to message this {message one|Message}
 MessageMeIntent message me {message one|Message}
-MessageMeIntent tomessage me {message one|Message}
+MessageMeIntent to message me {message one|Message}
 
 MessageMeIntent to text this message {message one two|Message}
 MessageMeIntent text this message {message one two|Message}
