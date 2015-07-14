@@ -1,7 +1,8 @@
-ShowerThoughtAlexa to tell me a shower thought
-ShowerThoughtAlexa tell me a shower thought
-ShowerThoughtAlexa give me a shower thought
-ShowerThoughtAlexa whats on your mind
+ShowerThoughtIntent to tell me a shower thought
+ShowerThoughtIntent tell me a shower thought
+ShowerThoughtIntent give me a shower thought
+ShowerThoughtIntent whats on your mind
+ShowerThoughtIntent to tell me whats on your mind
 
 MeanAlexaIntent to insult {cody|PersonName}
 MeanAlexaIntent insult {cody|PersonName}
