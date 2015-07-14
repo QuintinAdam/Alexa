@@ -1,9 +1,6 @@
 class Philosophy
 
-  def initialize
-  end
-
-  def get_quote
+  def self.get_quote
     [
       "If you love something, set it free. Unless it's a tiger.",
       "When life gives you lemonade, make lemons.  Life will be all like, What?!?!",

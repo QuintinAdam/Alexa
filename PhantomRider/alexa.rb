@@ -27,16 +27,16 @@ post '/' do
   if (request.type == 'INTENT_REQUEST')
     if request.name == "MeanAlexaIntent"
       persons_name = request.slots["PersonName"]["value"]
-      message = HTTParty.get("http://pleaseinsult.me/api?severity=random")
-      response.add_speech("#{persons_name}, #{message['insult']}")
-      response.add_hash_card( { title: persons_name, subtitle: message['insult'] } )
+      insult = Insult.insult
+      response.add_speech("#{persons_name}, #{insult}")
+      response.add_hash_card( { title: persons_name, subtitle: insult } )
     elsif request.name == "NiceAlexaIntent"
       persons_name = request.slots["PersonName"]["value"]
-      message = HTTParty.get("http://pleasemotivate.me/api")
-      response.add_speech("#{persons_name}, #{message['motivation']}")
-      response.add_hash_card( { title: persons_name, subtitle: message['motivation'] } )
+      motivation = Insult.motivation
+      response.add_speech("#{persons_name}, #{motivation}")
+      response.add_hash_card( { title: persons_name, subtitle: motivation } )
     elsif request.name == "PhilsosophyIntent"
-      response.add_speech("#{Philosophy.new.get_quote.sample}")
+      response.add_speech("#{Philosophy.get_quote.sample}")
     else
       response.add_speech("I do not want to help you!")
     end
