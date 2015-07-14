@@ -1,9 +1,15 @@
+# Alexa ask Phantom Rider
 MeanAlexaIntent to insult {quintin|PersonName}
 MeanAlexaIntent insult {quintin|PersonName}
 NiceAlexaIntent to motivate {quintin|PersonName}
 NiceAlexaIntent motivate {quintin|PersonName}
 
 PhilsosophyIntent to prophesize
+
+ShowerThoughtAlexa to tell me a shower thought
+ShowerThoughtAlexa tell me a shower thought
+ShowerThoughtAlexa give me a shower thought
+ShowerThoughtAlexa whats on your mind
 
 HelpIntent for help
 HelpIntent to help

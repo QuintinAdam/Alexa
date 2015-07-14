@@ -6,7 +6,8 @@ require './philosophy'
 require './insult'
 require 'httparty'
 require 'ffaker'
-
+require 'open-uri'
+SHOWERTHOUGHTURL = "http://www.reddit.com/r/showerthoughts.json"
 before do
   content_type('application/json')
 end
@@ -25,18 +26,26 @@ post '/' do
   end
 
   if (request.type == 'INTENT_REQUEST')
-    if request.name == "MeanAlexaIntent"
+    case request.name
+    when "MeanAlexaIntent"
       persons_name = request.slots["PersonName"]["value"]
       insult = Insult.insult
       response.add_speech("#{persons_name}, #{insult}")
       response.add_hash_card( { title: persons_name, subtitle: insult } )
-    elsif request.name == "NiceAlexaIntent"
+    when "NiceAlexaIntent"
       persons_name = request.slots["PersonName"]["value"]
       motivation = Insult.motivation
       response.add_speech("#{persons_name}, #{motivation}")
       response.add_hash_card( { title: persons_name, subtitle: motivation } )
-    elsif request.name == "PhilsosophyIntent"
+    when "PhilsosophyIntent"
       response.add_speech("#{Philosophy.get_quote.sample}")
+    when "ShowerThoughtIntent"
+      poop = open(SHOWERTHOUGHTURL)
+      body = File.read(poop)
+      json = JSON.parse(body)
+      post = json["data"]["children"].sample
+      shower_thought = post['data']["title"]
+      response.add_speech(shower_thought)
     else
       response.add_speech("I do not want to help you!")
     end

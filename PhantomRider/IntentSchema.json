@@ -28,6 +28,10 @@
       ]
     },
     {
+      "intent": "ShowerThoughtIntent",
+      "slots": []
+    },
+    {
       "intent": "HelpIntent",
       "slots": []
     }
