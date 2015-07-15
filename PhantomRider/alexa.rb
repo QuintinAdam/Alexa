@@ -34,24 +34,27 @@ post '/' do
       persons_name = request.slots["PersonName"]["value"]
       insult = Insult.insult
       response.add_speech("#{persons_name}, #{insult}")
-      response.add_hash_card( { title: persons_name, subtitle: insult } )
+      response.add_hash_card( { title: "insult for #{persons_name}", subtitle: "#{insult}" } )
     when "NiceAlexaIntent"
       persons_name = request.slots["PersonName"]["value"]
       motivation = Insult.motivation
       response.add_speech("#{persons_name}, #{motivation}")
-      response.add_hash_card( { title: persons_name, subtitle: motivation } )
+      response.add_hash_card( { title: "motivation for #{persons_name}", subtitle: "#{motivation}" } )
     when "MessageMeIntent"
       message = request.slots["Message"]["value"]
       Messenger.new.message(message)
       response.add_speech("I sent you, the message: #{message}")
       response.add_hash_card( { title: "Sent you a text message!", subtitle: "I sent you, the message: #{message}" } )
     when "PhilsosophyIntent"
-      response.add_speech("#{Philosophy.get_quote.sample}")
+      message = Philosophy.get_quote.sample
+      response.add_speech("#{message}")
+      response.add_hash_card( { title: "A bit of philosophy for you...", subtitle: "#{message}" } )
     when "ShowerThoughtIntent"
       shower_thought = ShowerThought.get_thought
       response.add_speech(shower_thought)
+      response.add_hash_card( { title: "A shower tough for you...", subtitle: "#{shower_thought}" } )
     else
-      response.add_speech("I do not want to help you!")
+      response.add_speech("I really do not want to help you!")
     end
   end
 
