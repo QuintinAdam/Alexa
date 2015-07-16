@@ -14,39 +14,7 @@ or
 
 Alexa run MeanAlexa insult Cody
 
-#### Team DrugAddict:
-
-  Example Calls:
-    -
-
-#### Team DrugDealer:
-
-  Example Calls:
-    -
-
-#### Team DrugMule:
-
-  Example Calls:
-    -
-
-#### Team DrugUser:
-
-  Example Calls:
-    -
-
-#### Team GorillaMan:
-
-  Example Calls:
-    -
-
-#### Team MoltenMan:
-
-  Example Calls:
-    -
-
-#### Team PhantonRider:
-
-Example Calls:
+#### PhantonRider Examples:
 
 #### insult and motivate
 
@@ -93,12 +61,6 @@ Example Calls:
 - Alexa ask Phantom Rider to help me
 - Alexa ask Phantom Rider help me
 - Alexa ask Phantom Rider wat
-
-#### Team ShrunkenBones:
-
-  Example Calls:
-    -
-
 
 ## Contributing
 
